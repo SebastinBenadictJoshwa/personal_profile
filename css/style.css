@@ -1290,4 +1290,7 @@ input[type="text"] {
   opacity: 0;
 }
 
+.z-5 {
+  z-index: 5;
+
 /*# sourceMappingURL=style.css.map */
