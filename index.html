@@ -51,36 +51,11 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center">
-				<?php
-// Start a session
-session_start();
-
-if (isset($_SESSION['success'])) { 
-    ?>
-    <div class="alert alert-success alert-dismissible fade in">
-        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-        <strong>Success!</strong> Message Sent Successfully !!!!
-    </div>
-    <?php 
-} elseif (isset($_SESSION['error'])) {
-    ?>
-    <div class="alert alert-danger alert-dismissible fade in">
-        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-        <strong>Error!</strong> Error in Sending Message !!!!
-    </div>
-    <?php
-}
-
-// Clear the session variables after displaying the message
-unset($_SESSION['success']);
-unset($_SESSION['error']);
-?>
-
-					<div class="display-t js-fullheight" <?= isset($_SESSION)?'style="margin-top:-20px;"':""?>>
+					<div class="display-t js-fullheight">
 						<div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
 							<div class="profile-thumb" style="background: url(images/user.jpg);"></div>
 							<h1><span>Sebastin Benadict Joshwa D</span></h1>
-							<h3><span>PHP Full Stack Developer</span></h3>
+							<h3><span>Full Web Stack Developer</span></h3>
 							<p>
 								<ul class="fh5co-social-icons">
 									<li><a href="https://in.linkedin.com/in/sebastin-benadict-joshwa"><i class="icon-linkedin2"></i></a></li>
@@ -112,7 +87,7 @@ unset($_SESSION['error']);
 				</div>
 				<div class="col-md-8">
 					<h2>Hello There!</h2>
-					<p>Motivated and detail-oriented PHP Developer with a solid background in programming and web development. Proficient in leveraging a variety of technologies and frameworks to craft innovative and user-friendly software solutions. My passion lies in delivering top-notch code and staying updated with industry trends. Dedicated to collaborating with dynamic development teams to achieve project success.</p>
+					<p>Motivated and detail-oriented Freelance Web Developer with a strong background in programming and web development. Skilled in leveraging various technologies and frameworks to deliver innovative, user-friendly solutions for clients. Passionate about writing clean, efficient code and staying up-to-date with industry trends. Dedicated to collaborating with clients to ensure project success and delivering high-quality results that meet business needs.</p>
 					<p>
 						<ul class="fh5co-social-icons">
 							<li><a href="https://in.linkedin.com/in/sebastin-benadict-joshwa"><i class="icon-linkedin2"></i></a></li>
@@ -137,15 +112,34 @@ unset($_SESSION['error']);
 						<li class="timeline-heading text-center animate-box">
 							<div><h3>Work Experience</h3></div>
 						</li>
+						<li class="timeline-inverted animate-box">
+							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">Angular Developer</h3>
+									<span class="company">Intsky Sylon - Jan 2024 - Present</span>
+								</div>
+								<div class="timeline-body">
+									<p>Successfully implemented and maintained frontend designs using Angular,
+										ensuring a seamless and responsive user experience.
+										Developed and optimized efficient web components, contributing to the
+										scalability of web applications.
+										Improved performance, and enhanced data flow across the application
+										through Angular services and RxJS.
+										Continuously learning and adapting to the latest frontend technologies and
+										trends in the evolving field of web development.</p>
+								</div>
+							</div>
+						</li>
 						<li class="animate-box timeline-unverted">
 							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
 							<div class="timeline-panel">
 								<div class="timeline-heading">
 									<h3 class="timeline-title">PHP Developer Trainee</h3>
-									<span class="company">Alphasoftz Solutions - Jul 2023 - Current</span>
+									<span class="company">Alphasoftz Solutions - Jul 2023 - Dec 2023</span>
 								</div>
 								<div class="timeline-body">
-									<p>I'm currently working as trainee in the company and I have gained my knowledge in PHP Laravel and Codeigniter frameworks.</p>
+									<p>I worked as trainee in the company and I have gained my knowledge in PHP Laravel and Codeigniter frameworks.</p>
 								</div>
 							</div>
 						</li>
@@ -190,10 +184,9 @@ unset($_SESSION['error']);
 							</span>
 							<div class="feature-copy">
 								<h3>Web Development</h3>
-								<p>Crafting Digital Experiences ✨ | Freelance Web Developer specializing in PHP, CodeIgniter, and Laravel 💻 | Turning Ideas into Stunning Websites 🌐</p>
-							</div>
+								<p>Crafting Digital Experiences ✨ | Freelance Full Stack Developer specializing in front-end and back-end technologies 💻 | Turning Ideas into Stunning, Functional Websites and Applications 🌐</p>
+								</div>
 						</div>
-
 					</div>
 				</div>
 			</div>
@@ -210,6 +203,48 @@ unset($_SESSION['error']);
 			<div class="row">
 				<div class="col-md-6">
 					<div class="progress-wrap">
+						<h3><span class="name-left">Angular</span><span class="value-right">90%</span></h3>
+						<div class="progress">
+						  <div class="progress-bar progress-bar-1 progress-bar-striped active" role="progressbar"
+						  aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+						  </div>
+						</div>
+					</div>
+					<div class="progress-wrap">
+						<h3><span class="name-left">Typescript</span><span class="value-right">90%</span></h3>
+						<div class="progress">
+						  <div class="progress-bar progress-bar-1 progress-bar-striped active" role="progressbar"
+						  aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+						  </div>
+						</div>
+					</div>
+					<div class="progress-wrap">
+						<h3><span class="name-left">Scss</span><span class="value-right">75%</span></h3>
+						<div class="progress">
+						  <div class="progress-bar progress-bar-1 progress-bar-striped active" role="progressbar"
+						  aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%">
+						  </div>
+						</div>
+					</div>
+					<div class="progress-wrap">
+						<h3><span class="name-left">Responsive Web Designs</span><span class="value-right">80%</span></h3>
+						<div class="progress">
+						  <div class="progress-bar progress-bar-1 progress-bar-striped active" role="progressbar"
+						  aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+						  </div>
+						</div>
+					</div>
+					<div class="progress-wrap">
+						<h3><span class="name-left">RxJS</span><span class="value-right">70%</span></h3>
+						<div class="progress">
+						  <div class="progress-bar progress-bar-1 progress-bar-striped active" role="progressbar"
+						  aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+						  </div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+				<div class="progress-wrap">
 						<h3><span class="name-left">HTML5/CSS3</span><span class="value-right">90%</span></h3>
 						<div class="progress">
 						  <div class="progress-bar progress-bar-1 progress-bar-striped active" role="progressbar"
@@ -234,36 +269,10 @@ unset($_SESSION['error']);
 						</div>
 					</div>
 					<div class="progress-wrap">
-						<h3><span class="name-left">Codeigniter</span><span class="value-right">85%</span></h3>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-4 progress-bar-striped active" role="progressbar"
-						  aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%">
-						  </div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="progress-wrap">
-						<h3><span class="name-left">Laravel</span><span class="value-right">70%</span></h3>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-5 progress-bar-striped active" role="progressbar"
-						  aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
-						  </div>
-						</div>
-					</div>
-					<div class="progress-wrap">
 						<h3><span class="name-left">MySQL</span><span class="value-right">80%</span></h3>
 						<div class="progress">
 						  <div class="progress-bar progress-bar-striped active" role="progressbar"
 						  aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
-						  </div>
-						</div>
-					</div>
-					<div class="progress-wrap">
-						<h3><span class="name-left">jQuery</span><span class="value-right">75%</span></h3>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-3 progress-bar-striped active" role="progressbar"
-						  aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%">
 						  </div>
 						</div>
 					</div>
@@ -331,59 +340,7 @@ unset($_SESSION['error']);
 			</div>
 		</div>
 	</div>
-
-	<div id="fh5co-consult">
-		<div class="video fh5co-video" style="background-image: url(images/cover_bg_1.jpg);">
-			<div class="overlay"></div>
-		</div>
-		<div class="choose animate-box">
-			<h2>Contact</h2>
-			<form action="send.php" method="post">
-				<div class="row form-group">
-					<div class="col-md-6">
-						<input type="text" name="fname" id="fname" class="form-control" placeholder="Your firstname">
-					</div>
-				</div>
-				<div class="row form-group">
-					<div class="col-md-6">
-						<input type="text" name="lname" id="lname" class="form-control" placeholder="Your lastname">
-					</div>
-				</div>
-
-				<div class="row form-group">
-					<div class="col-md-12">
-						<input type="text" name="email" id="email" class="form-control" placeholder="Your email address">
-					</div>
-				</div>
-
-				<div class="row form-group">
-					<div class="col-md-12">
-						<input type="text" name="sub" id="subject" class="form-control" placeholder="Your subject of this message">
-					</div>
-				</div>
-
-				<div class="row form-group">
-					<div class="col-md-12">
-						<textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Say something about us"></textarea>
-					</div>
-				</div>
-				<div class="form-group">
-					<input type="submit" value="Send Message" class="btn btn-primary">
-				</div>
-
-			</form>	
-		</div>
-	</div>
 	
-	<div id="fh5co-footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<p></p>
-				</div>
-			</div>
-		</div>
-	</div>
 
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
